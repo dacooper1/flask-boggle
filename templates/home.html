@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Testing block</h1>
+
+<div id="board-div">
+    <ul id="board-container">
+        {% for row in board %}
+            {% for char in row %}
+                <li> {{ char }}</li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+<form action="submit">
+    <input type="text" name="guess" id="guess">
+    <button> Enter </button>
+</form>
+{% endblock %}
