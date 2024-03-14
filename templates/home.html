@@ -11,8 +11,8 @@
         {% endfor %}
     </ul>
 </div>
-<form action="submit">
-    <input type="text" name="guess" id="guess">
-    <button> Enter </button>
+<form method="POST" class="new-guess">
+    <input type="text" name="guess" class="guess">
+    <button>Enter</button>
 </form>
 {% endblock %}
